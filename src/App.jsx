@@ -1,6 +1,109 @@
 import React, { useState } from "react";
 import { supabase } from "./supabase";
 
+function AnthimYatraLogo() {
+  return (
+    <div style={{ display: "flex", alignItems: "center", gap: 14 }}>
+      <svg
+        width="58"
+        height="58"
+        viewBox="0 0 100 100"
+        xmlns="http://www.w3.org/2000/svg"
+        style={{ flexShrink: 0 }}
+      >
+        <circle cx="50" cy="50" r="46" fill="#FBF7EF" stroke="#D4B483" strokeWidth="4" />
+
+        <circle cx="50" cy="28" r="10" fill="#D4B483" opacity="0.95" />
+
+        <path
+          d="M50 38 C44 48, 39 58, 35 72"
+          stroke="#6B1E1E"
+          strokeWidth="5"
+          strokeLinecap="round"
+          fill="none"
+        />
+
+        <path
+          d="M50 38 C56 48, 61 58, 65 72"
+          stroke="#6B1E1E"
+          strokeWidth="5"
+          strokeLinecap="round"
+          fill="none"
+        />
+
+        <path
+          d="M25 66 C34 58, 43 58, 50 70"
+          stroke="#6B1E1E"
+          strokeWidth="5"
+          strokeLinecap="round"
+          fill="none"
+        />
+
+        <path
+          d="M75 66 C66 58, 57 58, 50 70"
+          stroke="#6B1E1E"
+          strokeWidth="5"
+          strokeLinecap="round"
+          fill="none"
+        />
+      </svg>
+
+      <div>
+        <h2 style={{ margin: 0, fontSize: 26, color: "#241f1a" }}>
+          AnthimYatra
+        </h2>
+        <p style={{ margin: 0, color: "#6b4c3b", fontSize: 14 }}>
+          Compassion. Dignity. Peace.
+        </p>
+      </div>
+    </div>
+  );
+}
+
+function AnthimVrikshaLogo() {
+  return (
+    <svg
+      width="90"
+      height="90"
+      viewBox="0 0 100 100"
+      xmlns="http://www.w3.org/2000/svg"
+      style={{ marginBottom: 18 }}
+    >
+      <circle cx="50" cy="50" r="46" fill="#EEF7EA" stroke="#7AA56A" strokeWidth="4" />
+
+      <path
+        d="M50 72 V45"
+        stroke="#2F6B3F"
+        strokeWidth="6"
+        strokeLinecap="round"
+      />
+
+      <path
+        d="M50 48 C38 35, 25 38, 22 51 C35 54, 44 55, 50 48Z"
+        fill="#4F8A4F"
+      />
+
+      <path
+        d="M50 48 C62 35, 75 38, 78 51 C65 54, 56 55, 50 48Z"
+        fill="#5FA85F"
+      />
+
+      <path
+        d="M50 42 C42 27, 57 20, 66 31 C61 38, 56 41, 50 42Z"
+        fill="#78B66A"
+      />
+
+      <path
+        d="M36 78 C43 72, 57 72, 64 78"
+        stroke="#2F6B3F"
+        strokeWidth="4"
+        strokeLinecap="round"
+        fill="none"
+      />
+    </svg>
+  );
+}
+
 export default function App() {
   const [page, setPage] = useState("home");
   const [language, setLanguage] = useState("English");
@@ -124,10 +227,7 @@ export default function App() {
           zIndex: 100,
         }}
       >
-        <div>
-          <h2 style={{ margin: 0 }}>AnthimYatra</h2>
-          <p style={{ margin: 0, color: "#666" }}>Compassion. Dignity. Peace.</p>
-        </div>
+        <AnthimYatraLogo />
 
         <div style={{ display: "flex", gap: 10, flexWrap: "wrap" }}>
           {["home", "services", "nri", "vriksha", "booking"].map((item) => (
@@ -309,6 +409,7 @@ export default function App() {
               background: "linear-gradient(135deg,#eef7ea,#ffffff)",
             }}
           >
+            <AnthimVrikshaLogo />
             <h1>Anthim Vriksha 🌱</h1>
 
             <h2>Transform remembrance into living legacy.</h2>
