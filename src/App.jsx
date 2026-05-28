@@ -75,7 +75,7 @@ export default function App() {
     e.preventDefault();
     setLoading(true);
 
-    const { error } = await supabase.from("bookings").insert([formData]);
+    const { error } = await supabase.from("Bookings").insert([formData]);
 
     setLoading(false);
 
