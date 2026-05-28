@@ -80,12 +80,12 @@ export default function App() {
     setLoading(false);
 
     if (error) {
-      console.log("Supabase error:", error);
-      alert(error.message);
-      return;
-    }
+  console.log("Supabase error:", error);
+  alert("Something went wrong. Please try again or contact AnthimYatra support.");
+  return;
+}
 
-    alert("Request submitted successfully. AnthimYatra support will contact you shortly.");
+    alert("Your request has been submitted successfully. AnthimYatra support will contact you shortly.");
 
     setFormData({
       full_name: "",
