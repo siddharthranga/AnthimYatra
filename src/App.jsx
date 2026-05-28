@@ -239,7 +239,7 @@ export default function App() {
               {item === "nri"
                 ? "NRI"
                 : item === "vriksha"
-                ? "Anthim Vriksha"
+                ? "AnthimVriksha"
                 : item.charAt(0).toUpperCase() + item.slice(1)}
             </button>
           ))}
@@ -313,7 +313,7 @@ export default function App() {
               ["All India Support", "Coverage for villages, towns, and cities across India."],
               ["Faith-Sensitive Services", "Hindu, Muslim, Christian, Sikh, Jain, Buddhist, and regional customs."],
               ["NRI Coordination", "Remote support for families abroad with live updates."],
-              ["Anthim Vriksha", "Eco-friendly living memorial tree services."],
+              ["AnthimVriksha", "Eco-friendly living memorial tree services."],
             ].map(([title, text]) => (
               <div key={title} style={card}>
                 <h3>{title}</h3>
@@ -363,7 +363,7 @@ export default function App() {
             ["Basic Assistance", "Affordable support for rural and urban families."],
             ["Complete Family Support", "Transport, rituals, documentation, coordination."],
             ["NRI Family Support", "International family coordination and updates."],
-            ["Anthim Vriksha Memorial", "Living memorial tree service."],
+            ["AnthimVriksha Memorial", "Living memorial tree service."],
           ].map(([title, text]) => (
             <div key={title} style={{ ...card, marginBottom: 18 }}>
               <h2>{title}</h2>
@@ -410,7 +410,7 @@ export default function App() {
             }}
           >
             <AnthimVrikshaLogo />
-            <h1>Anthim Vriksha 🌱</h1>
+            <h1>AnthimVriksha 🌱</h1>
 
             <h2>Transform remembrance into living legacy.</h2>
 
@@ -426,7 +426,7 @@ export default function App() {
               }}
               onClick={() => setPage("booking")}
             >
-              Request Anthim Vriksha
+              Request AnthimVriksha
             </button>
           </div>
         </main>
@@ -553,7 +553,7 @@ export default function App() {
                 <option>Freezer Box</option>
                 <option>Priest / Religious Support</option>
                 <option>NRI Family Support</option>
-                <option>Anthim Vriksha Memorial</option>
+                <option>AnthimVriksha Memorial</option>
               </select>
 
               <textarea
