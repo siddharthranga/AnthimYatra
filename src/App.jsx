@@ -80,8 +80,8 @@ export default function App() {
     setLoading(false);
 
     if (error) {
-      console.log(error);
-      alert("Error submitting request. Please check Supabase table columns.");
+      console.log("Supabase error:", error);
+      alert(error.message);
       return;
     }
 
