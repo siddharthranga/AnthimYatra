@@ -187,6 +187,16 @@ export default function App() {
   alert("Something went wrong. Please try again or contact AnthimYatra support.");
   return;
 }
+const response = await fetch("/api/notify", {
+  method: "POST",
+  headers: {
+    "Content-Type": "application/json",
+  },
+  body: JSON.stringify(formData),
+});
+
+console.log("Notify Status:", response.status);
+console.log("Notify Response:", await response.text());
 
     alert("Your request has been submitted successfully. AnthimYatra support will contact you shortly.");
 
